@@ -8,26 +8,17 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends AbstractController
 {
-     /**
+    /**
      * @Route("/default/", name="app_index")
+     *  @return Response
      */
+
     public function index(): Response
     {
         return $this->render('default/index.html.twig', [
             'website' => 'Wild Séries',
-         ]);
+        ]);
     }
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
